@@ -1,0 +1,133 @@
+*{
+    margin: auto;
+    padding: auto;
+    outline: none;
+}
+
+
+
+.serv-header {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.serv-header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  letter-spacing: 12px;
+  color: #C4EF17;
+  text-shadow:
+    0 0 8px #C4EF17,
+    0 0 20px #A4CE15;
+  margin-bottom: 20px;
+}
+
+.serv-header p {
+  font-size: 20px;
+  color: #ddd;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #111111;
+  border: 2px solid #3AFF00;
+  border-radius: 15px;
+  box-shadow:
+    0 0 10px rgba(196,239,23,0.3),
+    inset 0 0 15px rgba(196,239,23,0.15);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  cursor: default;
+}
+
+.service-card>img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.pad{
+   padding: 30px 25px;
+}
+
+.pad h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #C4EF17;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.pad p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.pad>a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.pad>a:hover{
+    text-decoration: underline;
+}
+
+.service-card:hover {
+  transform: scale(1.01);
+  box-shadow:
+    0 0 30px #C4EF17,
+    inset 0 0 25px #C4EF17,
+    0 0 50px #A4CE15;
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #C4EF17;
+  filter: drop-shadow(0 0 5px #C4EF17);
+}
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .serv-header h1 {
+    font-size: 48px;
+    letter-spacing: 8px;
+  }
+
+  .service-card {
+    padding: 20px 15px;
+  }
+
+  .icon {
+    font-size: 36px;
+  }
+}
+
+
+.splide__track{
+  width: 100%;
+  padding-top:150px;
+   padding-bottom:30px;
+  background-image: url('/Photo/cover.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
